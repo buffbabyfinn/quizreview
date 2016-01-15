@@ -3,7 +3,7 @@
   padding: 30px 30px 40px 100px;
   background: radial-gradient(ellipse, #452673, #8968CD);
   border-radius: 20px;
-  color: #993D00;
+  color: #4D2E19;
   margin-bottom: 3em;
   border: 2px solid #473C8B;
   box-shadow: 10px 10px 5px #42426F;
@@ -16,7 +16,7 @@
   text-align: center;
   margin-top: 2.5em;
   background: radial-gradient(ellipse, #452673, #8968CD);
-  color: #993D00;
+  color: #4D2E19;
   border: 2px solid #473C8B;
   box-shadow: 10px 10px 5px #42426F;
 
@@ -30,7 +30,7 @@
   padding-bottom: 2em;
 }
 body {
-  background-color: #FFB266;
+  background-color: #996633;
 }
 .questions p {
   font-size: 1.5em;
@@ -39,12 +39,16 @@ body {
 }
 .btn:focus {
   outline: none !important;
+  background-color: #BEBEBE;
+  color: #575757;
 }
-#startbtn:focus {
-  background-color: #696969;
+.btn {
+  color: #737373;
 }
-#submit {
-  outline: none !important;
+.btn:hover{
+  background-color: #1487B8;
+  color: #8F9DA3
+  outline: none;
 }
 #tokyo{
   text-align: center;
