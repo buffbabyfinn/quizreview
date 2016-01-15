@@ -1,0 +1,10 @@
+.questions {
+  display: none;
+}
+#tokyo , #dublin , #barbados , #quebec , #rovaniemi {
+  display: none;
+}
+.jumbotron{
+  text-align: center;
+  margin-top: 35px;
+}

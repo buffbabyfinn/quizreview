@@ -1,73 +1,76 @@
+$(function () {
+  $("#startbtn").click(function(){
+    $(".questions").show();
+  });
+});
+
+
 $(function(){
   var count = 0;
   $('#submit').click(function(event){
-    var science = $('select#scienceExperiment').val();
-    var universe = $('select#universe').val();
-    var conflict = $('select#conflict').val();
-    var lifePath = $('select#lifePath').val();
-    var money = $('select#money').val();
 
-        if(science === "yes") {
-          $(count += 2);
-          } else {
-          (count);
-          }
+    var temperature = $('select#temperature').val();
+    var energy = $('select#energy').val();
+    var activity = $('select#activity').val();
+    var time = $('select#time').val();
+    var company = $('select#company').val();
 
-        if(universe === "yes") {
-          $(count +=2);
-          } else {
-          (count);
-          }
-
-        if(conflict === "flipp") {
-          $(count += 1);
-        } else if(conflict === "summer") {
-          $(count += 2);
-        } else if (conflict === "unity") {
+        if(temperature === "hot") {
+          $(count += 6);
+        } else if (temperature === "apathetic") {
           $(count += 3);
-        } else if (conflict === "slippery") {
-          $(count += 4);
-          } else {
-          $(count += 5);
-        }
-
-        if(lifePath === "flipp") {
-          $(count += 1);
-        } else if(lifePath === "summer") {
-          $(count += 2);
-        } else if (lifePath === "unity") {
-          $(count += 3);
-        } else if (lifePath === "slippery") {
-          $(count += 4);
-          } else {
-          $(count += 5);
-        }
-
-        if(money === "flipp") {
-          $(count += 1);
-        } else if(money === "summer") {
-          $(count += 2);
-        } else if (money === "unity") {
-          $(count += 3);
-        } else if (money === "slippery") {
-          $(count += 4);
-          } else {
-          $(count += 5);
-        }
-
-        // alert("Your money is: " + money);
-        // $('#flipp').show();
-        // console.log("hello and your count is " + count);
-        if(count <= 4) {
-          $("#flipp").show();
-        } else if (count < 8 && count > 4) {
-          $("#summer").show();
-        } else if (count >= 8 && count < 12) {
-          $('#unity').show();
-        } else if (count < 16 && count >= 12) {
-          $('#slippery').show();
         } else {
-          $("#morty").show();
+          $(count)
+        }
+
+        if(energy === "nature") {
+          $(count += 5);
+        } else if (energy === "mix"){
+          $(count += 3);
+        } else {
+          $(count += 2);
+        }
+
+        if(activity === "relax") {
+          $(count += 6);
+        } else if(activity === "mix") {
+          $(count += 3);
+        } else {
+          $(count += 1);
+        }
+
+        if(time === "history") {
+          $(count += 5);
+        } else if(time === "both") {
+          $(count += 3);
+        } else {
+          $(count += 2);
+        }
+
+        if(company === "family") {
+          $(count += 6);
+        } else if(company === "couple") {
+          $(count += 3);
+        } else {
+          $(count += 1);
+        }
+
+
+
+      //  $(".results").show();
+      //   alert("Your count is: " + count);
+      //   // $('#flipp').show();
+        console.log("hello and your count is " + count);
+        if(count <= 6) {
+          $("#rovaniemi").show();
+        } else if (count < 13 && count > 6) {
+          $("#quebec").show();
+        } else if (count <=19  && count >= 13) {
+          $('#dublin').show();
+        } else if (count <=24 && count >= 19) {
+          $('#tokyo').show();
+        } else {
+          $("#barbados").show();
         }
 
         event.preventDefault();
