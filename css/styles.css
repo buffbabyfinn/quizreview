@@ -1,7 +1,7 @@
 .questions {
   display: none;
   padding: 30px 30px 40px 100px;
-  background-color: #8968CD;
+  background: radial-gradient(ellipse, #452673, #8968CD);
   border-radius: 20px;
   color: #993D00;
   margin-bottom: 3em;
@@ -15,10 +15,11 @@
   border-radius: 1.5em !important;
   text-align: center;
   margin-top: 2.5em;
-  background-color: #8968CD;
+  background: radial-gradient(ellipse, #452673, #8968CD);
   color: #993D00;
   border: 2px solid #473C8B;
   box-shadow: 10px 10px 5px #42426F;
+
 }
 .jumbotron img{
   max-width: 100%;
