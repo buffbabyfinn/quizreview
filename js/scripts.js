@@ -61,23 +61,23 @@ $(function(){
       //   alert("Your count is: " + count);
       //   // $('#flipp').show();
         console.log("hello and your count is " + count);
-        if(count <= 6) {
-          $("#rovaniemi").show();
-        } else if (count < 13 && count > 6) {
-          $("#quebec").show();
-        } else if (count <=19  && count >= 13) {
-          $('#dublin').show();
-        } else if (count <=24 && count >= 19) {
-          $('#tokyo').show();
-        } else {
-          $("#barbados").show();
-        }
+      if(count <= 6) {
+        $("#rovaniemi").show();
+      } else if (count < 13 && count > 6) {
+        $("#quebec").show();
+      } else if (count <=19  && count >= 13) {
+        $('#dublin').show();
+      } else if (count <=24 && count >= 19) {
+        $('#tokyo').show();
+      } else {
+        $("#barbados").show();
+      }
 
 $(function(){
-        $('.endbtn').click(function() {
-            location.reload();
-        });
-      });
+    $('.endbtn').click(function() {
+      location.reload();
+    });
+  });
         event.preventDefault();
 
       });
