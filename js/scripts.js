@@ -73,6 +73,11 @@ $(function(){
           $("#barbados").show();
         }
 
+$(function(){
+        $('.endbtn').click(function() {
+            location.reload();
+        });
+      });
         event.preventDefault();
 
       });
